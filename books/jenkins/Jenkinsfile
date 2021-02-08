@@ -10,8 +10,8 @@ pipeline {
     }
 
     environment {
-        DEV_PROJECT = "kitty-catt-books-dev"
-        STAGE_PROJECT = "kitty-catt-books-stage"
+        DEV_PROJECT = "nl49827-books-dev"
+        STAGE_PROJECT = "nl49827-books-stage"
         APP_GIT_URL = "https://github.com/kitty-catt/DO288-apps"
         NEXUS_SERVER = "http://nexus-common.apps.eu45.prod.nextcle.com/repository/nodejs"
 
