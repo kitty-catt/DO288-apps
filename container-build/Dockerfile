@@ -3,7 +3,7 @@ FROM quay.io/redhattraining/httpd-parent
 
 LABEL io.openshift.expose-services="8080:http"
 
-ENV MYDIRS="/var/log/httpd"
+ENV MYDIRS="/var/log/httpd /var/run/httpd"
 
 RUN chown -R 1001:0 $MYDIRS && \
     chgrp -R 0 $MYDIRS && \
