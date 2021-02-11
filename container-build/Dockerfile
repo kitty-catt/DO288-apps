@@ -2,6 +2,7 @@
 FROM quay.io/redhattraining/httpd-parent
 
 LABEL io.openshift.expose-services="8080:http"
+EXPOSE 8080
 
 ENV MYDIRS="/var/log/httpd /var/run/httpd"
 
