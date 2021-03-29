@@ -3,7 +3,7 @@ FROM quay.io/redhattraining/httpd-parent
 
 # PORT
 LABEL io.openshift.expose-services="8080/http"
-RUN sed -i "s/Listen 80/Listen 8080/g" /etc/httpd/conf/httd.conf
+RUN sed -i "s/Listen 80/Listen 8080/g" /etc/httpd/conf/httpd.conf
 EXPOSE 8080
 
 # PRIVILEDGES
