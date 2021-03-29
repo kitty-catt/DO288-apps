@@ -7,7 +7,7 @@ RUN sed -i "s/Listen 80/Listen 8080/g" /etc/httpd/conf/httpd.conf
 EXPOSE 8080
 
 # PRIVILEDGES
-ENV MYDIR="/var/logs/httpd"
+ENV MYDIR="/var/log/httpd"
 RUN chown -R 1001:0 ${MYDIR} &&\
     chmod -R g=u ${MYDIR} &&\
     chgrp -R 0 ${MYDIR}
