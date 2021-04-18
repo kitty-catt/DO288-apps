@@ -10,12 +10,12 @@ config_s2i
 
 ######## CUSTOMIZATION STARTS HERE ############
 
-echo "---> Installing application source into ${DOCROOT}"
+echo "---> Installing application source into "
 
-cp -R /tmp/src/*.html ${DOCROOT}
+cp -R /tmp/src/*.html ./
 
 DATE=$(date "+%Y-%m-%d")
-echo "${DATE} >> ${DOCROOT}/info.html
+echo "${DATE} >> ./info.html
 
 
 ######## CUSTOMIZATION ENDS HERE ############
