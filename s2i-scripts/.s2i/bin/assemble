@@ -16,8 +16,7 @@ pwd
 cp -R /tmp/src/*.html ./
 
 DATE=$(date "+%Y-%m-%d")
-echo "${DATE} >> ./info.html
-
+echo "${DATE}" >> ./info.html
 
 ######## CUSTOMIZATION ENDS HERE ############
 
