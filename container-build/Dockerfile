@@ -10,6 +10,6 @@ EXPOSE 8080
 ENV MYDIRS="/var/run/httpd /var/log/httpd"
 RUN chown -R 1001:0 ${MYDIRS} && \
     chmod -R g=u ${MYDIRS} && \
-    chgrp -R g 0 ${MYDIRS}
+    chgrp -R 0 ${MYDIRS}
 USER 1001
 
